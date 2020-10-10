@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title> Proyecto de Paginas Web </title>
+    <link rel="shortcut icon" href=".ico">
+</head>
+
+<body>
+    <!-- Barra de navegación color negro-->
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">
+                <li class="navbar-top-item">
+                    <a href="login.html" class="navbar-top-links">Registro</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="login.html" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                        <!--################# Estas clase es para lo iconos ################################-->
+                        <!-- <i class="zmdi zmdi-chevron-down"></i> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+              <!--navegador de color negro de la parte frontal en donde aparece el carrito esto solo se agregarom con enlaces
+              y modificando si estructura en css y algunas librerias como bulma que nos ayuda con los efectos no hay nada de palabras
+              solo son iconos
+            -->
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="zmdi zmdi-menu"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="index.html">UMG</a>
+                <a class="navbar-mobile-link has-text-white" href="#"><i class="zmdi zmdi-shopping-cart"></i> Vacio</a>
+                <!--aca termina las tres opciones-->
+            </header>
+            <nav class="nav-menu" id="mySidenav">
+              <!--buscador-->
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon"><i class="zmdi zmdi-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                    <!--aca es en donde termina-->
+                </form>
+
+                <a class="is-hidden-mobile brand is-uppercase has-text-weight-bold has-text-dark" href="index.html">UMG</a>
+                <!--navegador-->
+                <ul class="nav-menu-ul">
+                  <!--en este se presenta elk navegador de color blanco en dondew estan el registro he iniciar secion-->
+                    <li class="nav-menu-item"><a href="login.html" class="nav-menu-link">Registro</a></li>
+                    <li class="nav-menu-item"><a href="login.html" class="nav-menu-link">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner banner-cover">
+      <!--aca es el banner grnade que aparece de principal con la letra mas grade -->
+        <div class="banner-container ">
+            <h1 class="title-cover">Ventas</h1>
+            <!-- ################################################### -->
+            <!--baner secundario de la parte inferior derecho -->
+            <a class="btn btn-default">Comprar colección de productos</a>
+        </div>
+    </div>
+
+    <!-- Barra de navegacion secundaria -->
+    <!-- ######################################### Segunda navegacion ####################################### -->
+    <div class="container">
+        <nav class="nav">
+          <!--esta opcion aparece abajo del banner grande con letras grandes en donde podemos modificalo a nuestro gusto
+          la cual tiene barias opciones
+        -->
+            <a class="nav-item active has-text-weight-semibold" href="#">Popular</a>
+            <a class="nav-item has-text-weight-semibold" href="#">Novedades</a>
+            <a class="nav-item has-text-weight-semibold" href="#">Más vendidos</a>
+            <a class="nav-item has-text-weight-semibold" href="#">Ofertas</a>
+            <a class="nav-item has-text-weight-semibold" href="#">Muy pronto</a>
+        </nav>
+    </div>
+    <!-- Sección de fotografías en donde puede aparecer los que estan en Oferta  -->
+    <!--contenedor principal en donde abarca todas las fotografias -->
+    <div class="container">
+
+      <!--aca no se tocana por que son parte del framwork utilizados para hacerlo responsive y otras cosas-->
+        <div class="columns is-multiline">
+
+            <div class="column is-full-mobile">
+
+                <div class="columns is-centered is-mobile is-multiline">
+      <!-- ########################v aca termina lo de los frame works  ##########################################-->
+                    <!-- 1 Sección de fotografías -->
+                    <div class="column is-half column-full">
+<!--aca es endode abarca todo la targeta en si la clase de ariba para describir como va  hacer cuando se acople e un dispusitivo-->
+                        <div class="card">
+                          <!--colocacion de precions y fotografias del producto-->
+                            <span class="price">$89.99</span>
+                            <img src="img/item-1.png" alt="">
+                            <div class="card-info">
+                              <!-- ############################################# -->
+                              <!--texto en la que aparece debajo cuando pasas el mause-->
+                                <h4 class="has-text-black has-text-centered has-text-weight-bold"> Playera manga larga TEE $89.99 </h4>
+                                <p class="has-text-centered">playera clásica para hombre en movimiento..
+                                    100%
+                                    algodon.</p>
+                                <div class="card-buttons">
+                                  <!--por si se pruguntan cual son los zmdi son iconos aca lo pueden encontrar
+                                  https://www.templateshub.net/demo/Mentor-Bootstrap4-Admin-Dashboard-Template/icons-material.html
+                                -->
+                                <!--iconos de ver del ojo, corazon y el carrito son iconos extraidos directamente de una Paginas
+                                en la parte superior encontraran el enlace para usalos gratuitamente
+                              -->
+                                    <a href="#" class="btn btn--mini-rounded"><i
+                                            class="zmdi zmdi-shopping-cart"></i></a>
+                                    <a href="#" class="btn btn--mini-rounded"><i
+                                            class="zmdi zmdi-favorite-outline"></i></a>
+                                    <a href="producto.html" class="btn btn--mini-rounded"><i
+                                            class="zmdi zmdi-eye"></i></a>
+                                  <!-- ########################### aca terminan  los iconos ######################################-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  ######################################################################################################## -->
+
+                    <div class="column column-full is-half">
+                        <!--aca es endode abarca todo la targeta en si la clase de ariba para describir como va  hacer cuando se acople e un dispusitivo-->
+                        <div class="card">
+                          <!--colocacion de precions y fotografias del producto-->
+                            <span class="price">$47.50</span>
+                            <img src="img/item-2.png" alt="">
+                            <!-- #####################################################  -->
+                            <div class="card-info">
+                              <!--texto en la que aparece debajo cuando pasas el mause-->
+                                <h4 class="has-text-black has-text-centered has-text-weight-bold">
+                                  Playera para mujer color blanco TEE $47.50
+                                 </h4>
+
+                                <p class="has-text-centered">
+                                    100%
+                                    cotton.
+                                </p>
+                                <!--por si se pruguntan cual son los zmdi son iconos aca lo pueden encontrar
+                                https://www.templateshub.net/demo/Mentor-Bootstrap4-Admin-Dashboard-Template/icons-material.html
+                              -->
+                              <!--iconos de ver del ojo, corazon y el carrito son iconos extraidos directamente de una Paginas
+                              en la parte superior encontraran el enlace para usalos gratuitamente
+                            -->
+                                <div class="card-buttons">
+                                    <a href="#" class="btn btn--mini-rounded">
+                                      <i  class="zmdi zmdi-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-favorite-outline"></i>
+                                    </a>
+                                    <a href="producto.html" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-eye"></i>
+                                    </a>
+                                </div>
+                                    <!-- ########################### aca terminan  los iconos ######################################-->
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="column is-full">
+                            <!--aca es endode abarca todo la targeta en si la clase de ariba para describir como va  hacer cuando se acople e un dispusitivo-->
+                        <div class="card">
+                              <!--colocacion de precions y fotografias del producto-->
+                            <span class="price">$65.95</span>
+                            <img src="img/item-3.png" alt="">
+
+                            <!-- #####################################################  -->
+
+                            <div class="card-info">
+                                <!--texto en la que aparece debajo cuando pasas el mause-->
+                                <h4 class="has-text-black has-text-centered has-text-weight-bold"> Sudadera para Hombre TEE $65.95 </h4>
+                                <p class="has-text-centered">Color Menta.
+                                    100%
+                                    algodon.
+                                    </p>
+                                    <!--por si se pruguntan cual son los zmdi son iconos aca lo pueden encontrar
+                                    https://www.templateshub.net/demo/Mentor-Bootstrap4-Admin-Dashboard-Template/icons-material.html
+                                  -->
+                                <div class="card-buttons">
+                                  <!--iconos de ver del ojo, corazon y el carrito son iconos extraidos directamente de una Paginas
+                                  en la parte superior encontraran el enlace para usalos gratuitamente
+                                  -->
+                                    <a href="#" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-favorite-outline"></i>
+                                    </a>
+                                    <a href="producto.html" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-eye"></i>
+                                    </a>
+                                    <!-- ########################### aca terminan  los iconos ######################################-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda sección de fotografías -->
+            <!-- control responsivo para las imagenes grandes -->
+            <div class="column is-half is-full-mobile">
+                <div class="columns is-mobile is-multiline">
+                    <div class="column is-full">
+                      <!-- targeta en conjunto o lo que contirne adetro en esta clase card lo tiene todo-->
+                        <div class="card">
+
+                          <!--El Strike serve para tachar los numeros y colocado de la imagenes grandes-->
+                            <span class="price"><strike>$1500.00</strike> $1200.00</span>
+                                <img src="img/computadora.jpg" alt="">
+                                <!--########################################################################-->
+                            <div class="card-info">
+                              <!--texto en la que aparece debajo cuando pasas el mause-->
+                                <h4 class="has-text-black has-text-centered has-text-weight-bold"> Pc Pretator $1200.00 </h4>
+                                <p class="has-text-centered">Color negro todo incluido.</p>
+                                <!--###################################################################-->
+                                <!--por si se pruguntan cual son los zmdi son iconos aca lo pueden encontrar
+                                https://www.templateshub.net/demo/Mentor-Bootstrap4-Admin-Dashboard-Template/icons-material.html
+                              -->
+                                <div class="card-buttons">
+                                  <!--iconos de ver del ojo, corazon y el carrito son iconos extraidos directamente de una Paginas
+                                  en la parte superior encontraran el enlace para usalos gratuitamente
+                                  -->
+                                    <a href="#" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-favorite-outline"></i>
+                                    </a>
+                                    <a href="producto.html" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-eye"></i>
+                                    </a>
+                                    <!-- ########################### aca terminan  los iconos ######################################-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--/////////////////////////////////////////////////////////////////-->
+                    <div class="column column-full is-half">
+                        <div class="card">
+                            <span class="price">$29.99</span>
+                            <img src="img/item-5.png" alt="">
+                            <div class="card-info">
+                                <h4 class="has-text-black has-text-centered has-text-weight-bold"> Palyera para mujer TEE $29.99 </h4>
+                                <p class="has-text-centered">color naranja.
+                                    100%
+                                    algodon.</p>
+                                <div class="card-buttons">
+                                    <a href="#" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="btn btn--mini-rounded">
+                                      <i lass="zmdi zmdi-favorite-outline"></i>
+                                    </a>
+                                    <a href="producto.html" class="btn btn--mini-rounded">
+                                      <i class="zmdi zmdi-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+
+                    <div class="column column-full is-half">
+                        <div class="card">
+                            <span class="price">$34.79</span>
+                            <img src="img/item-6.png" alt="">
+                            <div class="card-info">
+                                <h4 class="has-text-black has-text-centered has-text-weight-bold"> Playera para mujer TEE $34.79 </h4>
+                                <p class="has-text-centered">Color Blanco y negro.
+                                    100%
+                                    algodon.</p>
+                                <div class="card-buttons">
+                                    <a href="#" class="btn btn--mini-rounded"><i
+                                            class="zmdi zmdi-shopping-cart"></i></a>
+                                    <a href="#" class="btn btn--mini-rounded"><i
+                                            class="zmdi zmdi-favorite-outline"></i></a>
+                                    <a href="producto.html" class="btn btn--mini-rounded"><i
+                                            class="zmdi zmdi-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   -->
+
+    <div class="container container-full">
+    <div class="columns is-centered is-multiline">
+      <!--aca es el saparador la linea gris que aparece-->
+        <div class="column is-full">
+            <div class="separator"></div>
+        </div>
+        <!-- ###################################### -->
+        <div class="column is-half-tablet is-one-third-desktop column-half">
+          <!-- son targetas secundarias que aparecen en el inferior de la pagina-->
+            <div class="card card-second">
+              <!--umagen de la carta-->
+                <img class="card-second-image" src="img/lookbook-men.png" alt="">
+                <!--SEGIDAMENTE VIEN LA DESCRIPCIOIN QUE VIENE A LA PAR-->
+                <div class="card-second-body --text-right">
+                  <br>
+                    <h1 class="has-text-right is-size-4 has-text-weight-semibold-bold">Catálogo de ropa</h1>
+                    <p class="has-text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum labore quae reiciendis, corrupti debitis dicta
+                    </p>
+
+                    <div>
+                      <!--BOTON VER AHORA QUE APOARECE EN LA TARGETA -->
+                        <a href="#" class="btn btn-default is-size-7">Ver ahora</a>
+                    </div>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="column is-half-tablet is-one-third-desktop column-half">
+            <div class="card card-second">
+              <!--Fondo no encontrado  electro.png-->
+                <img class="card-second-image" src="img/electro.png" alt="">
+                <div class="card-second-body --text-right">
+                    <h1 class="has-text-right is-size-4 has-text-weight-semibold-bold">Electrodomesticos</h1>
+                    <p class="has-text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum labore quae reiciendis, corrupti debitis dicta
+                    </p>
+                    <div>
+                        <a href="#" class="btn btn-default is-size-7">Ver ahora</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="column is-half-tablet is-one-third-desktop">
+            <div class="card card-second">
+                <img class="card-second-image" src="img/lookbook-you.png" alt="">
+                <div class="card-second-body --text-right">
+                    <h1 class="has-text-right is-size-4 has-text-weight-semibold-bold">Otras variedades</h1>
+                    <p class="has-text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum labore quae reiciendis, corrupti debitis dicta
+                    </p>
+                    <div>
+                        <a href="#" class="btn btn-default is-size-7">Ver ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Pie de pagina -->
+<footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Información</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">La marca</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Local stores</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Servicios </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Porqué comprar</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios y retornos</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios seguros</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Testimonios </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Award waining</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Etival trading</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Tu cuenta</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Iniciar sesión</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Registro</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver carrito </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver catálogo</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Track an order</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Catalogo</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para hombres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Datos de contacto</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Head</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>
+                <div class="column is-full">
+                    <div class="footer-socials">
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-instagram"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bar-top">
+            <div class="container">
+                <a class="footer-bar-top-links" href="#">Proyecto Web</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
